@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 2fr);
+            gap: 10px;
+        }
+
+        .btn {
+            margin-bottom: 20px;
+        }
+
+        div {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        div img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align:center">Random User</h1>
+        <hr>
+    </header>
+    <main style="text-align:center">
+        <button onclick="loadUsers()" class="btn">New Users</button>
+        <div id="user-container" class="container" style="text-align:center">
+
+        </div>
+
+    </main>
+
+    <script src="random.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Countries</title>
+    <style>
+        header {
+            text-align: center;
+        }
+
+        #country-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        #country-container div {
+            border: 1px solid grey;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #details-container div {
+            border: 2px solid black;
+            margin-bottom: 5px;
+        }
+
+        #details-container img {
+            border: 1px solid black;
+        }
+
+        main button {
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Display All Countries</h1>
+        <hr>
+    </header>
+    <main style="text-align: center;">
+        <button onclick="getData()">Click To Show</button>
+        <div id="details-container">
+            <h2>Details Will Be appeared here</h2>
+
+        </div>
+        <div id="country-container">
+
+        </div>
+    </main>
+
+    <script src="countries.js"></script>
+</body>
+
+</html>
